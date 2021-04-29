@@ -1,5 +1,5 @@
 {
-  "name": "react-tailwind-components",
+  "name": "reactjs-tailwindcss",
   "version": "1.0.2",
   "description": "ReactJS components using Tailwind CSS style classes",
   "main": "dist/index.js",
