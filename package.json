@@ -15,7 +15,20 @@
     "prepublish": "npm run build-lib",
     "build-lib": "rm -rf dist && rollup -c"
   },
-  "author": "Gurpreet Singh",
+  "author": {
+    "name": "Gurpreet Singh",
+    "email": "gurupreetsingh2000@gmail.com",
+    "url": "https://gsin.in"
+  },
+  "bugs": "https://github.com/gsin11/reactjs-tailwindcss/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gsin11/reactjs-tailwindcss.git"
+  },
+  "engines": {
+    "node": "^12.0.0",
+    "npm": "^6.0.0"
+  },
   "license": "MIT",
   "keywords": [
     "reactjs",
