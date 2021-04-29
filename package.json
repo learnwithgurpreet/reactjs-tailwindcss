@@ -32,9 +32,21 @@
   "license": "MIT",
   "keywords": [
     "reactjs",
+    "react",
+    "package",
+    "components",
+    "framework",
+    "tailwind-framework",
+    "react-tailwind",
+    "react-framework",
+    "react-library",
+    "component-library",
+    "tailwind-component-library",
+    "tailwindjs",
     "tailwindcss",
     "js",
-    "javascript"
+    "javascript",
+    "gsin11"
   ],
   "devDependencies": {
     "@babel/core": "^7.13.16",
