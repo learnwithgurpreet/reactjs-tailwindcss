@@ -1,0 +1,28 @@
+.switch {
+  @apply h-8 md:h-6 w-14 md:w-12 relative inline-block;
+}
+
+.switch span {
+  @apply absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-gray-300 transition-all;
+}
+
+.switch span:before {
+  content: "";
+  @apply absolute h-6 w-6 md:h-4 md:w-4 left-1 bottom-1 bg-white transition-all rounded-50-percent;
+}
+
+.switch input {
+  @apply opacity-0 w-0 h-0;
+}
+
+.switch input:checked + span {
+  @apply bg-green-400;
+}
+
+.switch input:focus + span {
+  @apply shadow-md;
+}
+
+.switch input:checked + span:before {
+  @apply transform translate-x-6;
+}
