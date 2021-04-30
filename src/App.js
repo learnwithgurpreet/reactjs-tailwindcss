@@ -1,7 +1,7 @@
 import React from "react";
 import logo from './logo.svg';
 import './App.css';
-import { Toggle } from "./components"
+import { Toggle } from "./components/src"
 
 function App() {
   return (
