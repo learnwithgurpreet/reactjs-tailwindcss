@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("prismjs/themes/prism-tomorrow.css");
+
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+  @apply bg-black
+}
+
+h2 {
+  @apply font-bold text-3xl mb-2;
+}
+
+.details {
+  @apply mt-4 mb-4 text-gray-600 text-lg;
+}
