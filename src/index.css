@@ -16,6 +16,6 @@ h2 {
   @apply mt-4 mb-4 text-gray-600 text-lg;
 }
 
-.details-medium {
-  @apply mt-2 mb-2 text-base;
+.link {
+  @apply text-purple-600 font-semibold hover:underline;
 }

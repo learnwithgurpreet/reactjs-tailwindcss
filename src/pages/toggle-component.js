@@ -83,11 +83,15 @@ function MyToggle() {
     <section className="mb-8">
       <h2 className="mb-4">Properties <span className="italic">(Options)</span></h2>
       <ul>
-        {propertiesArray.map(obj => <li className="mb-5">
-          <p className="details-medium text-gray-800">{obj.name} | <span className="italic">{obj.type}</span> {obj.default ? `| default: ${obj.default}` : ""}</p>
-          <p className="details-medium text-gray-600">{obj.details}</p>
+        {propertiesArray.map(obj => <li className="mb-8">
+          <p className="mt-2 mb-2 text-lg text-gray-800 font-semibold">{obj.name} | <span className="italic">{obj.type}</span> {obj.default ? `| default: ${obj.default}` : ""}</p>
+          <p className="mt-2 text-lg text-gray-600">{obj.details}</p>
         </li>)}
       </ul>
+    </section>
+    <section className="mb-8">
+      <h2 className="mb-4">Issues</h2>
+      <p className="details">Please create an issue for any bug or feature requests on <a href="https://github.com/gsin11/reactjs-tailwindcss/issues" className="link">Github.</a></p>
     </section>
   </div>
 }
