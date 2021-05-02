@@ -52,15 +52,18 @@ function DefaultComponent() {
 function App() {
   return (
     <Router>
-      <main className="dark:bg-gray-800 bg-white relative h-screen">
+      <main className="bg-white relative h-screen">
         <header className="h-24 sm:h-32 flex items-center z-30 w-full">
           <div className="container mx-auto px-6 flex items-center justify-between max-w-5xl">
-            <div className="uppercase text-gray-800 dark:text-white font-black text-3xl">
+            <div className="uppercase text-gray-800 font-black text-3xl">
               <Link to="/">ReactJS + Tailwindcss</Link>
             </div>
+            <a href="https://github.com/gsin11/reactjs-tailwindcss">
+              <img src={`/images/github.svg`} alt="Github" className="w-9" />
+            </a>
           </div>
         </header>
-        <div className="bg-white dark:bg-gray-800 flex relative z-20 items-center">
+        <div className="bg-white flex relative z-20 items-center">
           <div className="container mx-auto px-6 flex relative py-8 max-w-5xl">
             <div className="mb-8 w-full">
               <Switch>
