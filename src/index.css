@@ -15,3 +15,7 @@ h2 {
 .details {
   @apply mt-4 mb-4 text-gray-600 text-lg;
 }
+
+.details-medium {
+  @apply mt-2 mb-2 text-base;
+}

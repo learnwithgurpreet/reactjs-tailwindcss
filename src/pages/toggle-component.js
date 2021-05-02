@@ -35,6 +35,33 @@ function MyToggle() {
 }
   `;
 
+  const propertiesArray = [
+    {
+      name: "onChange",
+      default: "() => {}",
+      type: "function",
+      details: "Function triggers on change of toggle."
+    },
+    {
+      name: "isChecked",
+      default: "false",
+      type: "boolean",
+      details: "current state of toggle."
+    },
+    {
+      name: "ariaLabel",
+      default: "toggle",
+      type: "string",
+      details: "string label value for screen readers"
+    },
+    {
+      name: "theme",
+      default: "purple",
+      type: "string",
+      details: "color value for your toggle button, refer to your local tailwindCSS configurations."
+    }
+  ]
+
   return <div>
     <h1 className="font-bold text-4xl mb-2">Toggle</h1>
     <section className="mb-12">
@@ -52,6 +79,15 @@ function MyToggle() {
       <p className="details">Toggle Component is created using checkbox. You can toggle your Switch by clicking on the it, or by pressing the spacebar while its focused.</p>
       <p className="details">Toggling the component calls the <code className="language-js">onChange</code> function with a context of the checkbox.</p>
       <CodeLayout code={basicExample} type="js" />
+    </section>
+    <section className="mb-8">
+      <h2 className="mb-4">Properties <span className="italic">(Options)</span></h2>
+      <ul>
+        {propertiesArray.map(obj => <li className="mb-5">
+          <p className="details-medium text-gray-800">{obj.name} | <span className="italic">{obj.type}</span> {obj.default ? `| default: ${obj.default}` : ""}</p>
+          <p className="details-medium text-gray-600">{obj.details}</p>
+        </li>)}
+      </ul>
     </section>
   </div>
 }
